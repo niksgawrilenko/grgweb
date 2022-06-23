@@ -1,0 +1,49 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./img/pushin.png">
+      <h1>Гавриленко Микита, КІт-211</h1>
+    </header>
+  
+    <div>
+      <div class="sidenav">
+        <a href="index.html">Головна</a>
+        <a href="hobby.html">Хоббі</a>
+        <a href="mobile.html">Смартфон</a>
+        <a id="cat" href="cat.html">Умка</a>
+        <script>
+          if(sessionStorage.getItem('login')) {
+            let a = document.createElement("a");
+            a.setAttribute("href", "/script");
+            a.innerHTML = "Script";
+            document.getElementById('cat').after(a);
+          } else {
+            let a = document.createElement("a");
+            a.setAttribute("href", "/auth");
+            a.innerHTML = "Script";
+            document.getElementById('cat').after(a);
+          }
+         </script>
+      </div>
+    </div>
+    <div class="main">
+      <h1 class="h1_table">Таблиця даних</h1>
+
+    </div>
+    <footer class="footer">
+      <p>Номер телефону: +380687483729</p>
+      <p>E-mail: nikitagawrilenko2212@gmail.com</p>
+    </footer>
+
+    <script src="./info.js"></script>
+  </body>
+  </html>

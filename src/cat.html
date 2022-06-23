@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="./img/pushin.png">
+    <h1>Гавриленко Микита, КІт-211</h1>
+  </header>
+
+  <div>
+    <div class="sidenav">
+      <a href="/">Головна</a>
+      <a href="hobby.html">Хоббі</a>
+      <a href="/mobile">Смартфон</a>
+      <a id="cat" href="/cat.html">Умка</a>
+      <script>
+        if(sessionStorage.getItem('login')) {
+          let a = document.createElement("a");
+          a.setAttribute("href", "/script");
+          a.innerHTML = "Script";
+          document.getElementById('cat').after(a);
+        } else {
+          let a = document.createElement("a");
+          a.setAttribute("href", "/auth");
+          a.innerHTML = "Script";
+          document.getElementById('cat').after(a);
+        }
+       </script>
+    </div>
+
+    <div class="main">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade container">
+
+          <img src="./img/umka.jpg" style="width:100%">
+          <div class="content">
+            <p>
+              Нещодавно, я вирішив завести собі маленького друга. Яким стало це кошеня.
+              Його назвали умкою за його біло-сіреньке забарвлення як у білого медведика Умки із мультфільма.
+              Він дуже грайливий. Любить як і я лазити в ноутбуці та гайсати по квартирі)
+            </p>
+          </div>
+        </div>
+
+      
+      </div>
+      <br>
+  </div>
+
+  
+    <div class="sidenavright">
+      <p>
+        Коли всі люди будуть такими, як коти о другій годині дня, світ досягне досконалості.<br><br>
+        Грегорі Девід Робертс
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Номер телефону: +380687483729</p>
+    <p>E-mail: nikitagawrilenko2212@gmail.com</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./img/pushin.png">
+      <h1>Гавриленко Микита, КІт-211</h1>
+    </header>
+  
+    <div>
+      <div class="sidenav">
+        <a href="index.html">Головна</a>
+        <a href="hobby.html">Хоббі</a>
+        <a href="mobile.html">Смартфон</a>
+        <a id="cat" href="cat.html">Умка</a>
+        <script>
+          if(sessionStorage.getItem('login')) {
+            let a = document.createElement("a");
+            a.setAttribute("href", "/script");
+            a.innerHTML = "Script";
+            document.getElementById('cat').after(a);
+          } else {
+            let a = document.createElement("a");
+            a.setAttribute("href", "/auth");
+            a.innerHTML = "Script";
+            document.getElementById('cat').after(a);
+          }
+         </script>
+      </div>
+  
+      <div class="main mobile_main">
+        <img class="mobile_img" src="./img/mobile.jpg">
+        <div class="mobile_info">
+          <h2>Redmi Note 7</h2>
+          <ul>
+            <li>Дисплей </li>
+            <ul>
+              <li>Діагональ 6.67</li>
+              <li>Разширення 2400x1080</li>
+              <li>Матриця IPS</li>
+              <li>Частота оновлення 120 Hz</li>
+            </ul>
+  
+            <li>Характеристики пам’яті</li>
+            <ul>
+              <li>Оперативна пам`ять 4 GB</li>
+              <li>Вбудована пам'ять 128 GB</li>
+            </ul>
+  
+            <li>Камера</li>
+            <ul>
+              <li>Фронтальна камера на 20 MP</li>
+              <li>Основна камера на   48 MP + 12 MP P</li>
+            </ul>
+  
+            <li>Процесор</li>
+            <ul>
+              <li>Name Qualcomm Snapdragon 660</li>
+              <li> 8 ядер</li>
+              <li>Частота 2.96 GHz</li>
+            </ul>
+  
+            <li>Батарея на  5160 mAh</li>
+          </ul>
+        </div>
+      </div>
+   
+      <div class="sidenavright">
+        <p>Телефон уже не зовсім актуальній, але мені вистачає його функцій.</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Номер телефону: +380687483729</p>
+      <p>E-mail: nikitagawrilenko2212@gmail.com</p>
+    </footer>
+  
+    <script src="./script.js"></script>
+  </body>
+  </html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <img class="logo" src="./img/pushin.png">
+    <h2>Гавриленко Микита, КІт-211</h2>
+  </header>
+
+  <div>
+    <div class="sidenav">
+      <a href="index.html">Головна</a>
+      <a href="hobby.html">Хоббі</a>
+      <a href="mobile.html">Смартфон</a>
+      <a id="cat" href="cat.html">Умка</a>
+      <script>
+        if(sessionStorage.getItem('login')){
+          let a = document.createElement("a");
+          a.setAttribute("href", "/script");
+          a.innerHTML = "Script";
+          document.getElementById('cat').after(a);
+        } else {
+          let a = document.createElement("a");
+          a.setAttribute("href", "/auth");
+          a.innerHTML = "Script";
+          document.getElementById('cat').after(a);
+        }
+       </script>
+    </div>
+
+    <div class="main">
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade container">
+          <div class="numbertext">1 / 5</div>
+          <img src="./img/cntu.jpg" style="width:100%">
+          <div class="content">
+            <p>   Привіт! Мене звати Микита. На данний момент я проживаю в місті Чернігів
+              та навчаюсь в Національному Університеті "Чернігівська Політехніка"
+            </p>
+          </div>
+        </div>
+
+        <div class="mySlides fade container">
+          <div class="numbertext">2 / 5</div>
+          <img src="./img/prog.jpg" style="width:100%">
+          <div class="content">
+          <p>Набір навичок у мене поки що невеликий, але я активно розвиваюсь в сфері програмування.
+            Особлива заціккавлений в Python розробці, в тому числі с сайтів. Так, це не стандартно але мені це подобається)
+          <p>  
+          
+          </div>
+        </div>
+
+      
+        <div class="mySlides fade container">
+          <div class="numbertext">3 / 5</div>
+          <img src="./img/operator.jpg" style="width:100%">
+          <div class="content">
+            <p>
+              Щоб забеспечити себе самостійно, я вже працюю в одній із компаній менеждером технічнох підтримки.
+              Також, у мене із важкістю, але вистачає часу проходити курси Linux та англійської.
+          </p>
+        </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+  </div>
+
+  
+    <div class="sidenavright">
+      <p>
+        А ви знали, що в НУ “Чернігівська політехніка” безкоштовно годують кавунами ?
+
+        День кавуна традиційно святкується 1 вересня в  ННІ права та соціальних технологій НУ “Чернігівська політехніка”. Коли точно з’явилася ця традиція, вже ніхто не пам’ятає, але точно більше 30 років тому!
+        
+        В цей день студенти другого курсу – «Шефи», запрошують на знайомство першокурсників – групу «підшефних». Старшокурсники годують «первачків» кавунами, знайомляться та розповідають історії студентського життя, діляться своїми «перемогами» та «поразками». Також розповідають про можливості в НУ “Чернігівська політехніка”: стажування закордоном, участь у волонтерських програмах та проектах, про студентські об’єднання та багато іншого. З цього починається міцна дружба та взаємопідтримка.
+      </p>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Номер телефону: +380687483729</p>
+    <p>E-mail: nikitagawrilenko2212@gmail.com</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
